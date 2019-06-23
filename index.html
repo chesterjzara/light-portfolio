@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chester Zara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" charset="utf-8"></script>
+
+    <!-- Programming language icons via https://konpa.github.io/devicon/ -->
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+
+    <script src="./js/app.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <header>
+        <div class="image-info">
+            <div class="profile-image-container">
+                <img src="./img/portrait.jpg" alt="portrait">
+            </div>
+            <div class="name-title-location">
+                <h1>Chester Zara</h1>
+                <h3>Full Stack Developer</h3>
+                <h4> <i class="icon">&#xE806;</i> Chicago, IL</h4>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-button page-active" id="about">
+                <i class="icon">&#xF2BC;</i>
+            </div>
+            <div class="nav-button" id="my-work">
+                <i class="icon">&#xE801;</i>
+            </div>
+            <div class="nav-button" id="resume">
+                    <i class="icon">&#xF0CA;</i>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/chesterjzara/" target="_blank"><i class="icon">&#xF300;</i></a>
+                <a href="https://www.linkedin.com/in/chester-zara/" target="_blank">
+                    <i class="icon">&#xF30C;</i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="about-container">
+            <section class="about-info">
+                <h2>About Me</h2>
+                <p>
+                    I am a full stack developer with a background in healthcare software implementation and support. I
+                    love the high-pressure situations, the need for teamwork, and the interesting technical problems
+                    that I encountered in healthcare IT.
+                </p>
+                <p>
+                    When I'm not writing code or squashing bugs I enjoy cooking, reading history or watching/playing
+                    basketball.
+                </p>
+            </section>
+            <hr>
+            <section class="skills-info">
+                <h2>Skills</h2>
+                <div class="skills-images-container">
+                    <div>
+                        <h3>Languages</h3>
+                        <i class="skill-icon devicon-javascript-plain colored"></i>
+                        <i class="skill-icon devicon-ruby-plain-wordmark colored"></i>
+                        <i class="skill-icon devicon-html5-plain-wordmark colored"></i>
+                        <i class="skill-icon devicon-css3-plain-wordmark colored"></i>
+                        <i class="skill-icon devicon-csharp-plain-wordmark colored"></i>
+                    </div>
+                    <div>
+                        <h3>Runtime/Framework</h3>
+                        <i class="skill-icon devicon-react-original-wordmark colored"></i>
+                        <i class="skill-icon devicon-nodejs-plain-wordmark"></i>
+                        <i class="skill-icon devicon-express-original-wordmark colored"></i>
+                        <i class="skill-icon devicon-angularjs-plain-wordmark colored"></i>
+                        <i class="skill-icon devicon-jquery-plain-wordmark colored"></i>
+                    </div>
+
+                    <div>
+                        <h3>Database</h3>
+                        <i class="skill-icon devicon-postgresql-plain-wordmark colored"></i>
+                        <i class="skill-icon devicon-mysql-plain-wordmark colored"></i>
+                        <i class="skill-icon devicon-mongodb-plain-wordmark colored"></i>
+                    </div>
+
+                    <!-- <div>
+                        <h3>Tools</h3>
+                        <i class="skill-icon devicon-heroku-original-wordmark colored"></i>
+                        <i class="skill-icon devicon-ubuntu-plain-wordmark colored"></i>
+                        <i class="skill-icon devicon-visualstudio-plain colored"></i>
+                    </div> -->
+
+                </div>
+                <div class="skills-description">
+
+                </div>
+            </section>
+            <hr>
+            <section class="github-activity">
+                <h2>GitHub Activity</h2>
+                <div class="github-calendar">
+                    Loading data here...
+                </div>
+
+            </section>
+
+        </article>
+        <article class="my-work-container">
+            <h2>Portfolio</h2>
+            <hr>
+            <div class="filter-container">
+                <div id='project' class="filter-active">All</div>
+                <div id='javascript'>Javascript</div>
+                <div id='angularjs'>AngularJS</div>
+                <div id='react'>React</div>
+                <div id='node'>Node.js</div>
+                <div id='ruby'>Ruby on Rails</div>
+                <div id='mongodb'>MongoDB</div>
+                <div id='sql'>SQL</div>
+            </div>
+            <div class="project-container">
+                <div class="project javascript react node sql">
+                    <div class="image-placeholder">
+                        <img src="./img/friendly-reviews.png" alt="Homepage of Friendly Reviews site">
+                    </div>
+                    <div class="project-text">
+                        <div class="project-heading">
+                            <h2>Friendly Reviews</h2>
+                            <a href="https://lit-spire-34692.herokuapp.com/">Live Site</a>
+                            <a href="https://github.com/chesterjzara/react-reviews">GitHub Repo</a>
+                        </div>
+                        <p>
+                            A review website for tracking your favorite restuarants, bars, or places in general and those of your friends. It will provide provide suggestions based off of reviews your friends have submitted, hopefully solving the struggle of choosing. This project utilizes the Google Maps API integrated with a React frontend to review places and add friends, while storing the information via a Express-Node.js backend in a Postgres database.
+                        </p>
+                        <div class="project-tags">
+                            <div id='javascript'>Javascript</div>
+                            <div id='react'>React</div>
+                            <div id='node'>Node.js</div>
+                            <div id='sql'>SQL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project javascript react ruby sql">
+                    <div class="image-placeholder">
+                        <img src="./img/world-map.png" alt="World Map display from the World Map Travel Tracker">
+                    </div>
+                    <div class="project-text">
+                        <div class="project-heading">
+                            <h2>World Map Travel Tracker</h2>
+                            <a href="https://shielded-taiga-28162.herokuapp.com/">Live Site</a>
+                            <a href="https://github.com/chesterjzara/world-travel-map">GitHub Repo</a>
+                        </div>
+                        <p>
+                            A tracking application to log your past and future world travels to a user account. This was built with a Ruby on Rails API backend and a React frontend. I learned a lot of maniuplating SVGs to use as a dynamic display and input method.
+                        </p>
+                        <div class="project-tags">
+                            <div id='javascript'>Javascript</div>
+                            <div id='react'>React</div>
+                            <div id='ruby'>Ruby on Rails</div>
+                            <div id='sql'>SQL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project javascript angularjs node mongodb">
+                    <div class="image-placeholder">
+                        <img src="./img/forum-template.png" alt="Sample image of Forum Template app">    
+                    </div>
+                    <div class="project-text">
+                        <div class="project-heading">
+                            <h2>Forum Template</h2>
+                            <a href="https://damp-harbor-18072.herokuapp.com/">Live Site</a>
+                            <a href="https://github.com/chesterjzara/forum-template-app">GitHub Repo</a>
+                        </div>
+                        <p>
+                            A basic web forum built with an AngularJS frontend, Node.js backend and MongoDB via RESTful APIs (MEAN).
+                        </p>
+                        <div class="project-tags">
+                            <div id='javascript'>Javascript</div>
+                            <div id='angularjs'>AngularJS</div>
+                            <div id='node'>Node.js</div>
+                            <div id='mongodb'>MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project javascript node mongodb">
+                    <div class="image-placeholder">
+                        <img src="./img/habit-tracker.png" alt="Habit Tracker app dashboard">
+                    </div>
+                    <div class="project-text">
+                        <div class="project-heading">
+                            <h2>Habit Tracker</h2>
+                            <a href="https://powerful-tundra-31725.herokuapp.com/">Live Site</a>
+                            <a href="https://github.com/chesterjzara/habits">GitHub Repo</a>
+                        </div>
+                        <p>
+                            A web app to enter and track your daily habits to promote adherence. Built with HTML/Javascript frontend, Bootstrap styling, Node.js backend and MongoDB.
+                        </p>
+                        <div class="project-tags">
+                            <div id='javascript'>Javascript</div>
+                            <div id='node'>Node.js</div>
+                            <div id='mongodb'>MongoDB</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="project javascript">
+                    <div class="image-placeholder"> 
+                        <img src="./img/nba-stats.png" alt="Image of my NBA Team Guessing game">    
+                    </div>
+                    <div class="project-text">
+                        <div class="project-heading">
+                            <h2>NBA Stats Games</h2>
+                            <a href="https://chesterjzara.github.io/nba-stats-game/index.html">Live Site</a>
+                            <a href="https://github.com/chesterjzara/chesterjzara.github.io/tree/master/nba-stats-game">GitHub Repo</a>
+                        </div>
+                        <p>
+                            A pair of guessing games for basketball geeks powered by Javascript, jQuery and an NBA statistics JSON API (Credit <a href="https://www.balldontlie.io/#introduction">BallDontLie</a>). 
+                        </p>
+                        <div class="project-tags">
+                            <div id='javascript'>Javascript</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </article>
+
+        <article class="resume-container">
+            <div class="resume-header">
+                <h2>Resume</h2>
+                <p>Download Resume - <a href="./docs/chester_zara_resume.pdf" download="chester_zara_resume">Basic
+                        Text</a> - <a href="./docs/chester_zara_resume.pdf" download="chester_zara_resume">Styled</a>
+                </p>
+            </div>
+            <hr>
+            <div class="resume-section">
+                <h3>Experience</h3>
+                <div>
+                    <h4>Epic Systems</h4>
+                    <div class="job-title-div">
+                        <p>Software Implementation and Support Consultant</p>
+                        <p>09/2017 - Current</p>
+                    </div>
+                    <ul>
+                        <li>
+                            Contracted with healthcare systems as an analyst and project leader working on site and remotely.
+                        </li>
+                        <li>
+                            Wrote SQL queries to create reports that helped inform clinical decision-making.
+                        </li>
+                        <li>
+                            Developed customized pharmacy clinical decision support tools, cutting costs by replacing legacy systems and maintaining high standards of patient care.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Epic Systems</h4>
+                    <div class="job-title-div">
+                        <p>Technical Account Manager</p>
+                        <p>07/2015 - 09/2017</p>
+                    </div>
+                    <ul>
+                        <li>
+                            Led technical support and project management of the Epic software for the pharmacy IT teams of
+                            multiple pediatric and academic health system customers simultaneously.
+                        </li>
+                        <li>
+                            Wrote scripts to optimize maintenance, test new configuration, update documentation, and
+                            troubleshoot problems.
+                        </li>
+                        <li>
+                            Acted as a conduit between customer needs and development resources to communicate
+                            time-sensitive, clinical application problems as solvable, technical problems.
+                        </li>
+                        <li>
+                            Delivering design and development of new features to meet unique client requests.
+                        </li>
+                        <li>
+                            Demonstrated learning capacity by mastering and successfully supporting an esoteric programming
+                            language (M and Cache) underpinning a 40 year-old code base.
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-section">
+                <h3>Education</h3>
+                <div>
+                    <h4>General Assembly</h4>
+                    <div class="job-title-div">
+                        <p>Software Engineering Immersive</p>
+                        <p>03/2019 - 06/2019</p>
+                    </div>
+                    <ul>
+                        <li>Completed full-time immersive course to update my knowledge on modern web languages and frameworks.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>University of Wisconsin-Madison</h4>
+                    <div class="job-title-div">
+                        <p>Bachelor of Sciences</p>
+                    </div>
+                    <ul>
+                        <li>Majored in biochemistry with a certificate in computer science.</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        </article>
+    </main>
+    
+</body>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+<script>
+    GitHubCalendar(".github-calendar", "chesterjzara", { responsive: true });
+</script>
+
+</html>

@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "Icons";
+    src: url('../fonts/fontello.ttf');
+}
+
+html {
+    /* background-color: #F5F5F5 */
+    background-color: rgb(154, 191, 249);
+}
+
+.icon {
+    font-family: "Icons";
+    font-style: normal;
+    text-decoration: none;
+}
+
+body {
+    height: 98vh;
+    width: 98vw;
+    padding: 10vh 10vw;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    font-family: 'Assistant', sans-serif;
+    
+}
+
+/* Header-Sidebar Nav Area */
+header {
+    flex-basis: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+    background-color: white;
+
+    text-align: center;
+
+    margin:  15px 10px;
+}
+.profile-image-container {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.profile-image-container > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.nav-button {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0.25em 0.5em;
+    margin: 0.25em;
+
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.nav-button:hover {
+    background-color: black;
+    color: white;
+}
+#about::after {
+    content: 'About'
+}
+#my-work::after {
+    content: 'My Work'
+}
+#resume::after {
+    content: 'Resume'
+}
+.page-active {
+    background-color: navy;
+    color: white;
+}
+.social-links a {
+    font-size: 3.17em;
+    margin: 5px;
+    color: black;
+}
+.social-links a:visited { text-decoration: none; color: black; }
+.social-links a:hover { text-decoration: none; color:blue; }
+.social-links a:focus { text-decoration: none; color:blue; }
+
+/* Main Content Area */
+main {
+    flex-basis: 80%;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    border-radius: 5px;
+    padding: 10px 10px 10px 20px;
+    margin:  15px 10px;
+
+    background-color: white;;
+}
+main::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+  }
+main::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 2px solid #555555;
+}
+.my-work-container, .resume-container {
+    display: none;
+}
+
+/* Skills Section */
+.skill-icon {
+    font-size: 3em;
+}
+.skills-images-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.skills-images-container > div {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.skills-images-container > div > h3 {
+    margin: 0 0 1em 0;
+}
+
+/* GitHub Calendar SVG Style */
+.month, .wday {
+    fill: black !important;
+}
+
+/* Portfolio Styling */
+.filter-container, .project-tags {
+    display: flex;
+    flex-flow: row wrap;
+}
+.filter-container > div, .project-tags > div {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.filter-active {
+    background-color: navy;
+    color: white;
+}
+.image-placeholder {
+    height: 100%;
+    width: 30%;
+    align-self: stretch;
+}
+.image-placeholder > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.project-container {
+    padding: 10px 5px;
+}
+.project {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+
+    border: 1px solid grey;
+    padding: 5px 10px;
+    margin: 10px 0;
+
+}
+.project-heading {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-text {
+    width: 65%;
+    margin: 5px 5px 5px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+/* Resume Section */
+.resume-header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: space-between
+}
+.job-title-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.resume-section h4, .resume-section p, .resume-section ul  {
+    margin: 0.6em 0;
+}
+.resume-section h4 {
+    border-bottom: 1px solid black;
+}
+
+
+
+
+@media only screen and (max-width: 1150px), screen and (max-height: 800px) {
+    body { 
+        flex-flow: column;
+        padding: 2vh 10vw;
+    }
+    header {
+        flex-flow: column;
+        justify-content: space-around;
+        padding: 1em 0 0 0;
+    }
+    main {
+        overflow-y: visible;
+    }
+    nav {
+        display: flex;
+        flex-flow: row;
+        align-items: center
+    }
+    article {
+        min-height: 750px;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      flex-flow: column nowrap;
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+    }
+    header {
+        margin: 2px;
+    }
+    main {
+      overflow-y: visible;
+      margin: 1em 2px 0 2px;
+    }
+    .nav-button {
+        text-align: center;
+    }
+    #about::after {
+        content: ''
+    }
+    #my-work::after {
+        content: ''
+    }
+    #resume::after {
+        content: ''
+    }
+    .project {
+        flex-flow: column nowrap;
+    }
+    .image-placeholder {
+        width: 100%;
+    }
+    .project-text {
+        width: auto;
+        margin: auto;
+    }
+    .project-heading {
+        flex-flow: column;
+    }
+  }

@@ -216,10 +216,11 @@ main::-webkit-scrollbar-thumb {
 
 
 
-@media only screen and (max-width: 1150px), screen and (max-height: 800px) {
+@media all and (max-width: 1150px), screen and (max-height: 800px) {
     body { 
         flex-flow: column;
         padding: 2vh 10vw;
+        height: auto
     }
     header {
         flex-flow: column;
@@ -243,12 +244,13 @@ main::-webkit-scrollbar-thumb {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
     body {
       flex-flow: column nowrap;
       padding: 0;
       margin: 0;
       width: 100vw;
+      height: auto
     }
     header {
         margin: 2px;

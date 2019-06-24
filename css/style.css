@@ -220,6 +220,7 @@ main::-webkit-scrollbar-thumb {
     body { 
         flex-flow: column;
         padding: 2vh 10vw;
+        height: auto
     }
     header {
         flex-flow: column;
@@ -249,6 +250,7 @@ main::-webkit-scrollbar-thumb {
       padding: 0;
       margin: 0;
       width: 100vw;
+      height: auto
     }
     header {
         margin: 2px;

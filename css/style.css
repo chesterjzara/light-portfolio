@@ -117,6 +117,19 @@ main::-webkit-scrollbar-thumb {
     display: none;
 }
 
+/* About Me */
+.about-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+
+    height: 100%;
+}
+.about-container > hr {
+    width: 100%;
+}
+
+
 /* Skills Section */
 .skill-icon {
     font-size: 3em;

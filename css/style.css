@@ -155,6 +155,9 @@ main::-webkit-scrollbar-thumb {
     border-radius: 5%;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
+.filter-container > div {
+    cursor: pointer;
+}
 .filter-active {
     background-color: navy;
     color: white;
